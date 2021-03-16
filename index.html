@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Image Identification Web App</title>
+    </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+      <h1>ML5.js DEMO</h1>
+      <hr style="border-top : 6px soldid #eee;">
+      <div style="margin: 20px;">
+        <h4>Enter Image Url</h4>
+        <textarea id="url" rows="2" cols="90" style="font-size: 12px;"></textarea>
+        <br><br>
+        <button onclick="submits()"class="btn btn-success btn-md">Update This Image</button>
+        <button onclick="check()"class="btn btn-success btn-md">Check</button>
+        <br><br>
+        <img src="" id="img">
+    </div>
+    <div class="col-xs-12 footer_div">
+        <h4 class="cold-sm-6 col-xs-12" style="padding:20px;"></h4>
+        <span id="objec_name">Object :</span>
+        <br><br><br>
+        <span id="rate">Accuracy</span>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
